@@ -3,11 +3,11 @@
   "version": 2,
   "framework": "vite",
   "installCommand": "npm install",
-  "buildCommand": "chmod +x node_modules/.bin/vite && npx vite build",
+  "buildCommand": "node ./node_modules/vite/bin/vite.js build",
   "outputDirectory": "build",
   "builds": [
     {
-      "src": "vite.config.js",
+      "src": "vite.config.ts",
       "use": "@vercel/static-build",
       "config": {
         "distDir": "build"
